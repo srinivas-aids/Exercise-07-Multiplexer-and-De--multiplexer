@@ -51,12 +51,27 @@ If the control input changes to AB = 10, then all the gates are restricted excep
 
 
 
-### PROGRAM 
+### PROGRAM
+~~~
 /*
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Developed by: u.srinivas 
+RegisterNumber:  212221230108
+
+module mux4(s1,s2,io,it,ir,iu,y);
+input s1,s2,io,it,ir,iu;
+output y;
+wire a,b,c,d,e,f;
+assign e=~s1;
+assign f=~s2;
+assign a=io&e&f;
+assign b=it&e&s2;
+assign c=ir&s1&f;
+assign d=iu&s1&s2;
+assign y=a|b|c|d;
+endmodule
 */
+~~~
 
 
 
@@ -67,6 +82,7 @@ RegisterNumber:
 
 
 
+![171138341-1eeefc99-8d0b-483f-9e3e-2e725e17e7c1](https://user-images.githubusercontent.com/93427183/171542301-64a603dd-9cc9-4723-8aaa-022810bccd07.png)
 
 
 
@@ -75,14 +91,45 @@ RegisterNumber:
 ### TIMING DIGRAMS  
 
 
+![171138383-40edc81e-4e26-49ac-94f2-7e099213e489](https://user-images.githubusercontent.com/93427183/171542315-0e67d1be-e494-4eae-92a9-f3980e70847a.png)
 
 
+![171138416-8f1c4f99-d66f-428a-92d4-a467fac010a7](https://user-images.githubusercontent.com/93427183/171542327-1d4fcaf1-3c7f-4a50-9f3a-b9c29ce91642.png)
+
+![171138453-bcfd031c-77cb-4ea3-9733-9f94a7120528](https://user-images.githubusercontent.com/93427183/171542337-d047a413-d463-49d9-8923-82a2c1c721b5.png)
+![171138482-3dac8c6b-0378-43f3-9e08-401ddf81888b](https://user-images.githubusercontent.com/93427183/171542346-c6e6bc31-01a9-4df0-8218-1b6b58ffb281.png)
 
 ### TRUTH TABLE 
+![171184283-34e5304c-d2b1-4b68-aaa1-7cb4b8591524](https://user-images.githubusercontent.com/93427183/171542371-51254167-29c2-4a1c-8bfc-a3a472f1690b.jpg)
 
+### program:
+~~~
+Program for flipflops  and verify its truth table in quartus using Verilog programming.
+Developed by: u.srinivas
+RegisterNumber:  212221230108
 
-
-
+PROGRAM:
+module dm(s1,s2,i1,i2,i3,i4,y);
+input s1,s2,i1,i2,i3,i4;
+output y;
+wire a,b,c,d,e,f;
+assign e=~s1;
+assign f=~s2;
+assign a=i1&e&f;
+assign b=i2&e&s2;
+assign c=i3&s1&f;
+assign d=i4&s1&s2;
+assign y=a|b|c|d;
+endmodule
+~~~
+### RTL : 
+![171138991-5e761b81-aa56-4221-9d89-908a12220396](https://user-images.githubusercontent.com/93427183/171543246-b238bbb4-bc8c-401b-9633-570073d92ba3.png)
+LOGIC  :
+### TIMING DIGRAMS  
+![171184556-6e3d5e2c-0b8d-4b23-a5dc-071238e3f9a8](https://user-images.githubusercontent.com/93427183/171543463-5ab3c199-8387-45d3-b35e-45742c1f6cf7.png)
+### TRUTH TABLE 
+![171184657-372c166d-d88f-4e70-8644-cb47d5092f01](https://user-images.githubusercontent.com/93427183/171543518-1b422dee-10a6-4dcb-b6f9-5679a133a882.png)
 
 
 ### RESULTS 
+Thus 4x1 Multiplexer and 1x4 Demultiplexer is been implemented and verified using verilog programming and its output are validated.
