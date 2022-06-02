@@ -97,6 +97,7 @@ endmodule
 ![171138416-8f1c4f99-d66f-428a-92d4-a467fac010a7](https://user-images.githubusercontent.com/93427183/171542327-1d4fcaf1-3c7f-4a50-9f3a-b9c29ce91642.png)
 
 ![171138453-bcfd031c-77cb-4ea3-9733-9f94a7120528](https://user-images.githubusercontent.com/93427183/171542337-d047a413-d463-49d9-8923-82a2c1c721b5.png)
+
 ![171138482-3dac8c6b-0378-43f3-9e08-401ddf81888b](https://user-images.githubusercontent.com/93427183/171542346-c6e6bc31-01a9-4df0-8218-1b6b58ffb281.png)
 
 ### TRUTH TABLE 
